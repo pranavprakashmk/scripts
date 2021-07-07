@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: keytab-secrets
+  namespace: default
+type: Opaque
+data:
+  hdfs.keytab: |
+    {{ hdfs_keytab_secret }}
